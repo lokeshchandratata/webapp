@@ -1,0 +1,35 @@
+*{
+padding:0;
+margin:0;
+}
+body{
+background-image:url(4.jfif);
+background-size:cover;
+background-position:center;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+.transbox {
+  background-position:center;
+  margin: 90px ;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 0.8;
+  padding:50px;
+}
+
+.transbox1 {
+  background-position:center;
+  margin: 50px ;
+  background-color: gray;
+  border: 1px solid black;
+  opacity: 0.8;
+  padding:50px;
+}
+
+.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: black;
+opacity: 1;
+}

@@ -1,0 +1,49 @@
+<html>
+<head><title>registration form</title>
+<style>
+
+body{
+background-image:url(db.jpg);
+background-size:cover;
+background-position:center;
+color:white;
+font-weight:bolder;
+}
+</style>
+<link href = "reg.css" rel ="stylesheet" type = "text\css">
+</head> 
+<body><CENTER>
+<form action="registeraction.jsp"method="get">
+<table border='1'  >
+<tr><th colspan=2>REGISTRATION FORM</th></tr>
+<tr><th colspan=2>EMPLOYEE PERSONAL DETAILS</th></tr>
+<tr><td class="fn">First Name:</td><td><input type ="text" name="fn"placeholder="enter first name"required></td></tr>
+<tr><td>Last Name:</td><td><input type ="text" name="ln"required></td></tr>
+<tr><td class="un">User Name:</td><td class="unt"><input type ="text" name=un required></td></tr>
+<tr><td > Password:</td><td class="unt"><input type ="password"name="psd"required></td></tr>
+
+<tr><td>Country code:</td><td><input type="text" name="country_code" pattern="[A-Za-z]{3}">
+<tr><td>Mobile:</td><td ><input type="tel" id="phone" name="phone"  required></td></tr>
+<tr><td>EMAIL id:</td><td><input type ="email" name="email"required></td></tr>
+<tr><td>Birthdate:</td><td> <input type="date" name="bday"></td></tr>
+<tr><td>Occupation:</td><td><select name="options" required>
+                    <option>--select--</option>
+                    <option>entrepreneur</option>
+                    <option>Govt.Job</option>
+                    <option>Software Employee</option>
+                </select></td></tr>
+<tr><td>Gender:</td><td><a><input type ="radio" name="gender" value="male">male</a><a><input type ="radio" name="gender" value="female">female</a></td></tr>
+<tr><td>ADDRESS:</td><div id="a"><td><textarea name="add" required></textarea> </td></div></tr>
+<tr><td>Skills:</td><td ><a>
+<input type ="checkbox"name="skill"value="c">C</a><br>
+<a><input type ="checkbox"name="skill"value="c++">C++</a><br>
+<a><input type ="checkbox"name="skill"value="JAVA">JAVA</a><br>
+<a><input type ="checkbox"name="skill"value="PYTHON">PYTHON</a><br>
+<a><input type ="checkbox"name="skill"value=".NET">.NET</a><br>
+<a><input type ="checkbox"name="skill"value="DATABASE">DATABASE</a><br>
+<a><input type ="checkbox"name="skill"value="ANDROID">ANDROIDs</a></td></tr>
+<div class="e"><tr> <td><a><input type ="reset" value ="clear"></a></td><a><td><input type ="submit"></a></td></tr></div>
+</table>
+</form>
+</body><CENTER>
+</html>
